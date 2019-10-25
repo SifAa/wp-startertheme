@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    .menu-toggle:hover {
+    background-color: #000;
+}
+ 
+ 
+.menu-toggle {
+    width: 90%;
+    margin-right: auto;
+    margin: 5%;
+    background-color: transparent;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    padding: 1em 2em;
+}
+}

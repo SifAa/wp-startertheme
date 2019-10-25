@@ -1,0 +1,108 @@
+#page {
+    @extend .container;
+}
+
+#masthead, #content, #colophon {
+    @extend .row;
+    // background: #ddd;
+    @extend .mb-2;
+}
+
+a {
+    color: rgb(50, 50, 50);
+
+    :hover {
+        color: rgb(50, 50, 50);
+    }
+    :visited {
+        color: rgb(50, 50, 50);
+    }
+}
+
+// header
+#masthead {
+    align-items: center;
+    min-height: 60px;
+    justify-content: center;
+}
+.site-branding {
+    @extend .col-md-3;
+    @extend .col-7;
+
+    .site-title {
+        font-size: 1em;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+}
+#site-navigation {
+    @extend .col-12;
+
+    #primary-menu {
+        @extend .d-flex;
+        @extend .justify-content-around;
+    }
+    li {
+        width: 100%;
+    }
+    a:hover {
+        color: rgb(50, 50, 50);
+    }
+    a:visited {
+        color: rgb(50, 50, 50);
+    }
+}
+
+@media screen and (min-width: 768px){
+    #site-navigation {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        li {
+            // margin-left: 2em;
+            // margin-right: 2em;
+            width: auto;
+        }
+    }
+}
+
+// page
+#primary {
+    @extend .col-md-7;
+}
+#primary-full{
+    @extend .col-12;
+    .entry-title {
+        display: none;
+    }
+}
+#secondary {
+    @extend .col-md-5;
+}
+
+// footer
+.site-info {
+    @extend .col-12;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    min-height: 60px;
+    p {
+        margin: 0;
+    }
+}
+.entry-footer{
+    a {
+        @extend .ml-2;
+    }
+}
+
+
+// Payment
+.stripe-card-group {
+    width: 60%;
+}
+#stripe-exp-element {
+    width: 20%;
+}
+#stripe-cvc-element {
+    width: 10%;
+}
